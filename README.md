@@ -9,16 +9,20 @@
         - Admin
         - Regular user
           
-    - User available functions
-        - Add recipe
-          - Obligated inputs to confirm recipe
-            - Titel
-            - Description
-            - Needed ingriedients
-            - Step by step cooking description
-          - Optional inputs for recipe
-            - Nutrition values
-            - Image
+    - Profile available functions 
+        - User available functions
+            - Add recipe
+              - Obligated inputs to confirm recipe
+                - Titel
+                - Description
+                - Needed ingriedients
+                - Step by step cooking description
+              - Optional inputs for recipe
+                - Nutrition values
+                - Image
+                - ect
+    
+        - Admin available functions
 
       
 
