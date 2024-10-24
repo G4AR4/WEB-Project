@@ -1,64 +1,19 @@
-/* Default Light Mode
 :root {
-  --text: #110123;
-  --background: #f7ebff;
-  --primary: #420381;
-  --secondary: #9c76cb;
-  --accent: #ff950a;
+  --text: #171618;
+  --background: #f5f5f4;
+  --primary: #8f5d98;
+  --secondary: #554059;
+  --accent: #b79abc;
 }
-/* Dark Mode
-body.dark-mode {
-  --text: #ecdcfe;
-  --background: #0c0014;
-  --primary: #bd7efc;
-  --secondary: #5a3489;
-  --accent: #f58b00;
-} */
-/* 
-:root {
-  --text: #161d1a;
-  --background: #f9fbfa;
-  --primary: #42574e;
-  --secondary: #ac9fb7;
-  --accent: #896782;
+:root .dark-mode {
+  --text: #e8e7e9;
+  --background: #141414;
+  --primary: #bba6bf;
+  --secondary: #604365;
+  --accent: #9967a2;
 }
-body.dark-mode {
-  --text: #e2e9e6;
-  --background: #040605;
-  --primary: #a8bdb4;
-  --secondary: #554860;
-  --accent: #987691;
-} */
 
-/* :root {
-  --text: #0c0311;
-  --background: #fcf7fd;
-  --primary: #9833db;
-  --secondary: #ea8ac4;
-  --accent: #e36385;
-}
-body.dark-mode {
-  --text: #f7eefc;
-  --background: #070208;
-  --primary: #8924cc;
-  --secondary: #75154e;
-  --accent: #9c1c3e;
-} */
 
-:root {
-  --text: #071212;
-  --background: #fbfdfd;
-  --primary: #4eb9b5;
-  --secondary: #9aa2d7;
-  --accent: #8477c9;
-}
-body.dark-mode {
-  --text: #edf8f8;
-  --background: #020303;
-  --primary: #46afac;
-  --secondary: #293166;
-  --accent: #433687;
-}
 
 
 body {
@@ -98,89 +53,61 @@ nav ul li a:hover {
   transition: color 0.3s;
 }
 
-      /* Dropdown container - hide content by default */
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        border-radius: 14px;
-        background-color: var(--secondary, 0,1);
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        flex-direction: column;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-  
-      /* Ensure each dropdown item takes up full row */
-      .dropdown-content li {
-        width: 100%;
-      }
-  
-      /* Links inside the dropdown */
-      .dropdown-content li a {
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left; /* Keep dropdown items aligned to the left */
-      }
-  
-      /* Change color of dropdown links on hover */
-      .dropdown-content li a:hover {
-        background-color: var(--accent);
-        color: white;
-        border-radius: 14px;
-      }
-  
-      /* Show the dropdown menu on hover */
-      .dropdown:hover .dropdown-content {
-        display: flex;
-      }
-  
-      /* Style the dropdown button */
-      .dropbtn {
-        display: block;
-        padding: 14px 20px;
-        color: white;
-        background-color: var(--primary);
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-      }
-  
-      .dropdown:hover .dropbtn {
-        background-color: var(--primary);
-      }
-
-/* Dropdown Menu
+/* Dropdown container - hide content by default */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--primary);
+  border-radius: 14px;
+  background-color: var(--secondary, 0,1);
   min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+/* Ensure each dropdown item takes up full row */
 .dropdown-content li {
-  display: block;
+  width: 100%;
 }
 
+/* Links inside the dropdown */
 .dropdown-content li a {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: left; /* Keep dropdown items aligned to the left */
 }
 
+/* Change color of dropdown links on hover */
 .dropdown-content li a:hover {
   background-color: var(--accent);
+  color: white;
+  border-radius: 14px;
 }
 
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* Style the dropdown button */
+.dropbtn {
   display: block;
-} */
+  padding: 14px 20px;
+  color: white;
+  background-color: var(--primary);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--primary);
+}
 
 /* Button */
 button {
