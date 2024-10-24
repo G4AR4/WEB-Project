@@ -3,60 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WEB-Project</title>
-  <style>
-
-    body {
-      background-color: #F7EFE5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .nav-menu {
-      list-style-type: none;
-      margin: 25px 0;
-      padding: 0 20px;
-      border-radius: 14px;
-      background-color: #C3ACD0;
-      display: flex;
-    }
-
-  </style>
+  <title>Fruit Paradise</title>
+  <link rel="stylesheet" href="index.css">
 </head>
-
-
-
 <body>
   <header>
-    <div class="nav-menu">
-      <a class="menu" href="">
-        <h2>Menu</h2>
-      </a>
-      <a class="menu" href="">
-        <h2>Search</h2>
-      </a>
-      <a class="menu" href="">
-        <h2>Profile</h2>
-      </a>
-      <a class="menu" href="">
-        <h2></h2>
-      </a>
-      <a class="menu" href="">
-        <h2></h2>
-      </a>
-      <a class="menu" href="">
-        <h2></h2>
-      </a>
-      <a class="menu" href="">
-        <h2></h2>
-      </a>
-      <a class="menu" href="">
-        <h2></h2>
-      </a>
+    <h1>Fruit Paradise</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- Dropdown Menu -->
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Services</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Fresh Delivery</a></li>
+            <li><a href="#">Organic</a></li>
+            <li><a href="#">Wholesale</a></li>
+          </ul>
+        </li>
+        <!-- Dark Mode Toggle Button -->
+        <li>
+          <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="description"></section>
+      <h2>Welcome to Fruit Paradise!</h2>
+      <p>Your go-to destination for fresh, organic, and delicious fruits!</p>
+    </section>
+
+    <section class="card-section">
+      <div class="card">
+        <img src="https://canadianfoodfocus.org/wp-content/uploads/2020/09/grannysmith-1-1024x576.jpg" alt="Apple">
+        <h3>Apples</h3>
+        <p>Crisp and fresh, perfect for snacking.</p>
+        <button class="learn-more" onclick="openModal('Apple')">Learn More</button>
+      </div>
+      <div class="card">
+        <img src="https://www.foodandwine.com/thmb/4fzQW9u60XlhTk52CIuM1BlLhcc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/amazonfreebananas-em-86304874-2000-5a276309cf1944349fb55818c98c7b1b.jpg" alt="Banana">
+        <h3>Bananas</h3>
+        <p>Rich in potassium and great for energy boosts.</p>
+        <button class="learn-more" onclick="openModal('Banana')">Learn More</button>
+      </div>
+      <div class="card">
+        <img src="https://www.nutritionadvance.com/wp-content/uploads/2023/07/whole-and-half-oranges-face.jpg" alt="Orange">
+        <h3>Oranges</h3>
+        <p>Full of vitamin C, perfect for juicing.</p>
+        <button class="learn-more" onclick="openModal('Orange')">Learn More</button>
+      </div>
+    </section>
+  </main>
+
+  <aside>
+    <h4>Related Articles</h4>
+    <ul>
+      <li><a href="#">Benefits of Organic Fruits</a></li>
+      <li><a href="#">How to Store Fruits Properly</a></li>
+      <li><a href="#">Top 10 Exotic Fruits</a></li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>&copy; 2024 Fruit Paradise</p>
+    <p>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modal-info"></p>
+    </div>
   </div>
-</header>
 
-
+  <script src="index.js"></script>
 </body>
 </html>
